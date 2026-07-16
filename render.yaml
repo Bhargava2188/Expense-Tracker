@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: expense-tracker-backend
+    runtime: java
+    rootDir: Backend/expense-tracker
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
